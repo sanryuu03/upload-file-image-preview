@@ -1,5 +1,6 @@
 import { useState } from "react";
 import upload from "/assets/icon/upload.svg";
+import Preview2 from "./Components/Preview2";
 
 function App() {
   const [image, setImage] = useState();
@@ -43,6 +44,7 @@ function App() {
           </div>
         </div>
       </section>
+      <Preview2 />
     </>
   );
 }
