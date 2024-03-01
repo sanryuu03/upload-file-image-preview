@@ -15,29 +15,34 @@ function App() {
 
   return (
     <>
-      <form>
-        <div className="mb-3 form-control">
-          <label className="label">gambar</label>
+      <section className="flex justify-center w-full h-full mt-3">
+        <div className="card w-2/4 bg-sky-300 shadow-xl">
+          <div className="card-body">
+            <form className="">
+              <div className="mb-3">
+                <label className="label capitalize">gambar preview</label>
 
-          <span className="flex items-center justify-between">
-            <img
-              src={imagePreview}
-              width={90}
-              height={90}
-              alt={"icon upload"}
-              className={"mb-2 rounded-lg"}
-            />
-            <input
-              type="file"
-              className="form-control"
-              accept="image/png, image/jpeg"
-              onChange={(event) => {
-                onImageHandler(event);
-              }}
-            />
-          </span>
+                <span className="flex items-center justify-between">
+                  <img
+                    src={imagePreview}
+                    width={90}
+                    height={90}
+                    alt={"icon upload"}
+                    className={"mb-2 rounded-lg"}
+                  />
+                  <input
+                    type="file"
+                    accept="image/png, image/jpeg"
+                    onChange={(event) => {
+                      onImageHandler(event);
+                    }}
+                  />
+                </span>
+              </div>
+            </form>
+          </div>
         </div>
-      </form>
+      </section>
     </>
   );
 }
