@@ -33,6 +33,7 @@ function App() {
                   />
                   <input
                     type="file"
+                    className="bg-base-100"
                     accept="image/png, image/jpeg"
                     onChange={(event) => {
                       onImageHandler(event);

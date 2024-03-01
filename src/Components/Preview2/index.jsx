@@ -22,6 +22,7 @@ export default function Preview2() {
                 </div>
                 <input
                   type="file"
+                  className="bg-gray-100"
                   accept="image/png, image/jpeg"
                   onChange={(event) => {
                     showPreview(event);
