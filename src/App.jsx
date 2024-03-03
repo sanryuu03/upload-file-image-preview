@@ -1,6 +1,7 @@
 import { useState } from "react";
 import upload from "/assets/icon/upload.svg";
 import Preview2 from "./Components/Preview2";
+import PreviewWithFilePond from "./Components/PreviewWithFilePond";
 
 function App() {
   const [image, setImage] = useState();
@@ -17,11 +18,11 @@ function App() {
   return (
     <>
       <section className="flex justify-center w-full h-full mt-3">
-        <div className="card w-2/4 bg-sky-300 shadow-xl">
+        <div className="w-2/4 shadow-xl card bg-sky-300">
           <div className="card-body">
             <form className="">
               <div className="mb-3">
-                <label className="label capitalize">gambar preview</label>
+                <label className="capitalize label">gambar preview</label>
 
                 <span className="flex items-center justify-between">
                   <img
@@ -46,6 +47,7 @@ function App() {
         </div>
       </section>
       <Preview2 />
+      <PreviewWithFilePond />
     </>
   );
 }
